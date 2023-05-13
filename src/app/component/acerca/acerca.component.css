@@ -1,0 +1,8 @@
+.img_perfil {
+        width: 300px;
+        object-fit: cover;
+        padding: 5px;
+        margin-top: auto;
+        margin-bottom: auto;
+        display: block;
+}

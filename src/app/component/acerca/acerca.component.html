@@ -1,0 +1,16 @@
+<div class="row cuerpo_portfolio py-5 mt-5">
+  <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+    <!-- <img src="{{persona.img}}" alt="Foto" class="img-fluid img_perfil shadow p-2 mb-3 bg-body rounded"> -->
+    <img src="../../../assets/foto.png" alt="Foto" class="img-fluid rounded-circle img_perfil shadow p-2 mb-3 bg-body rounded">
+  </div>
+  <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+    <h1>{{persona.nombre}} {{persona.apellido}}</h1>
+    <p class="fst-italic">{{persona.titulo}}</p>
+    <p>
+      {{persona.descripcion}}
+      <a href="#" class="boton_eb float-end" routerLink="/acerca-edit/1" *ngIf="isLogged">
+        <i class="fa-solid fa-pen"></i>
+      </a>
+    </p> 
+  </div>
+</div>

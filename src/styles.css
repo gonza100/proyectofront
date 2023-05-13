@@ -1,0 +1,110 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    background-color: black;
+    background-image: linear-gradient( #1d1616, black);
+    
+    color: white;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+.cuerpo_portfolio {
+    background-image: url(assets/fondo2.jpg);
+    background-position: center;
+    background-size: cover;
+    color: #ffffff;
+    border: 15px ridge #050218;
+    padding-left: 25px;
+    padding-right: 48px;
+    padding-top: 10px;
+    position: relative;
+    margin: 0px;
+}
+
+.bg-body {
+    --bs-bg-opacity: 0.05; 
+}
+
+
+.boton_eb i {
+    color: #2234d9;
+    padding: 4px;
+    font-size: 18px;
+}
+
+.boton_eb i:hover {
+    color: #3d8360;
+    padding: 4px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.boton_a i {
+    color: #2e6079;
+    padding: 4px;
+    font-size: 24px;
+}
+
+.boton_a i:hover {
+    color: #82a8c0;
+    padding: 4px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.boton_form button {
+    background-color: #2e6079;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.boton_form button:hover {
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.boton_form {
+    display:flex;
+    justify-content: center;
+}
+
+.titulo {
+    font-weight: bold;
+    font-size: 17px;
+    margin-bottom: 0px;
+}
+
+.fecha {
+    color: gray;
+    font-size: 14px;
+    font-style: italic;
+    margin-bottom: 0px;
+}
+
+/* Resoluciones de 992px y menores */
+@media only screen and (max-width: 992px) {
+    h2 {
+        font-size: 22px;
+    }
+}
+
+/* Resoluciones de 768px y menores */
+@media only screen and (max-width: 768px) {
+    h2 {
+        font-size: 17px;
+        font-weight: bold;
+    }
+
+    .titulo {
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    body {
+        font-size: 14px;
+    }
+}

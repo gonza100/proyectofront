@@ -1,0 +1,27 @@
+<div class="row cuerpo_portfolio py-5 mt-5">
+  <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+    <h2>Habilidades 
+      <a href="#" class="boton_a" routerLink="/skill-new" *ngIf="isLogged">
+        <i class="fa-solid fa-plus"></i>
+      </a>
+    </h2>
+  </div>
+  <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+    <dl *ngFor="let skill of skillArray">
+      <dt class="titulo">
+        {{skill.nombreSk}}
+        <a href="#" class="boton_eb float-end" (click)="delete(skill.id)" *ngIf="isLogged">
+          <i class="fa-solid fa-trash"></i>
+        </a>
+        <a href="#" class="boton_eb float-end" routerLink="/skill-edit/{{skill.id}}" *ngIf="isLogged">
+          <i class="fa-solid fa-pen"></i>
+        </a>
+      </dt>
+        <dd class="mb-3">
+          <ngb-progressbar type="dark" textType="dark" [value]="skill.porcentaje" [striped]="true" [animated]="true">
+            <i>{{skill.porcentaje}}%</i>
+          </ngb-progressbar>
+        </dd>
+    </dl>
+  </div>
+</div>
